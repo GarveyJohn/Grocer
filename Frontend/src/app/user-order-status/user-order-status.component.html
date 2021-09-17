@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Order ID</th>
+        <th>Status</th>
+        <th>User ID</th>
+        <th>Timing</th>
+    </tr>
+    <tr *ngFor="let data of arr">
+        <td>{{data.orderID}}</td>
+        <td>{{data.status}}</td>
+        <td>{{data.userID}}</td>
+        <td>{{data.time}}</td>
+    </tr>
+</table>

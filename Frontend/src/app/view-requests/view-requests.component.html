@@ -1,0 +1,19 @@
+<div>
+    <h2>All requests from employees</h2>
+    <table>
+        <tr>
+            <th>Employee ID</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Message</th>
+        </tr>
+        <tr *ngFor="let data of arr">
+            <td>{{data.empID}}</td>
+            <td>{{data.productID}}</td>
+            <td>{{data.productName}}</td>
+            <td>{{data.reqMsg}}</td>
+        </tr>
+    </table>
+    <br>
+    <a routerLink="/adminHomePage">Back</a><br>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h2>Funds</h2>
+    <form [formGroup] = "userRef" (ngSubmit)="addFunds()">
+        <label>Add Funds: </label><input type="text" formControlName = "funds"><br>
+        <input type="submit" value="Add Funds">
+        <input type="reset" value="Reset">
+        <br>
+        {{msg}}
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<div class = "wrapper fadeInDown">
+    <div id = "formContent">
+    <h3>Admin Login</h3>
+    <form [formGroup] = "adminLoginRef" (ngSubmit)="checkUser()">
+        <label>Admin ID: </label><input type="text" formControlName = "adminID"><br>
+        <label>Password: </label><input type="password" formControlName = "password"><br>
+        <input type="submit" value="Sign In">
+        <input type="reset" value="Reset">
+        <br>
+        {{msg}}
+    </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+    <h2>Change Employee Password</h2>
+    <p>If this is your first time logging in and you have the default password, we ask for you to please change your password. Thank you!</p>
+    <form [formGroup] = "employeeRef" (ngSubmit)="updatePassword()">
+        <label>Employee ID: </label><input type="text" formControlName = "empID"><br>
+        <label>New Password: </label><input type="text" formControlName = "password"><br>
+        <input type="submit" value="Update Password">
+        <input type="reset" value="Reset">
+        <br>
+        {{msg}}
+    </form>
+</div>

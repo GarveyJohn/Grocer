@@ -1,0 +1,29 @@
+<div>
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <th>Status</th>
+            <th>User ID</th>
+            <th>Timing</th>
+        </tr>
+        <tr *ngFor="let data of arr">
+            <td>{{data.orderID}}</td>
+            <td>{{data.status}}</td>
+            <td>{{data.userID}}</td>
+            <td>{{data.time}}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <form [formGroup] = "orderRef" (ngSubmit)="updateOrderStatus()">
+        <label>Order ID: </label><input type="text" formControlName = "orderID"><br>
+        <label>Updated Status: </label><input type="text" formControlName = "status"><br>
+        <input type="submit" value="Update Status">
+        <input type="reset" value="Reset">
+        <br>
+        {{msg}}
+    </form>
+    <br>
+    <a routerLink="/employeeHomePage">Back</a><br>
+</div>

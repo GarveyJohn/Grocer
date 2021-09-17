@@ -1,0 +1,26 @@
+<div>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Issue</th>
+        </tr>
+        <tr *ngFor="let data of arr">
+            <td>{{data.userID}}</td>
+            <td>{{data.issue}}</td>
+        </tr>
+    </table>
+<br>
+<br>
+
+<form [formGroup] = "userRef" (ngSubmit)="unlockUser()">
+    <label>User ID: </label><input type="text" formControlName = "userID"><br>
+    <input type="submit" value="Unlock Account">
+    <input type="reset" value="Reset">
+    <br>
+    {{msg}}
+    <br>
+    {{msg1}}
+    <br>
+    <a routerLink="/employeeHomePage">Back</a><br>
+</form>
+</div>

@@ -1,0 +1,11 @@
+  
+h2 {
+  margin: 20px;
+  text-align: center;
+  color:skyblue;
+  padding: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+}

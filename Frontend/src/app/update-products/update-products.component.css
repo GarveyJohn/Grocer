@@ -1,0 +1,35 @@
+a {
+    float: left;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+}
+
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+th {
+    background: #73a1da;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+}
+
+tr {
+    border-right: 1px solid #a7c6ec;
+}
+
+
+tr:hover {
+    border-right: 1px solid #5c93d6;
+}
+
+td {
+    padding: 4px 8px;
+    border-right: 1px solid #e0e3e6;
+  }

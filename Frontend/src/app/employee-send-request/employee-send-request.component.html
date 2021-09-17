@@ -1,0 +1,12 @@
+<form [formGroup] = "requestRef" (ngSubmit)="addRequest()">
+    <label>Employee ID: </label><input type="text" formControlName = "empID"><br>
+    <label>Product ID: </label><input type="text" formControlName = "productID" ><br>
+    <label>Prodoct Name: </label><input type="text" formControlName = "productName"><br>
+    <label>Request Message: </label><input type="text" formControlName = "reqMsg"><br>
+    <input type="submit" value="Create Request">
+    <input type="reset" value="Reset">
+    <br>
+    {{msg}}
+    <br>
+    <a routerLink="/employeeHomePage">Back</a><br>
+</form>

@@ -1,0 +1,28 @@
+<div>
+    <h2>All requests from employees</h2>
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <th>Status</th>
+            <th>User ID</th>
+            <th>Timing</th>
+        </tr>
+        <tr *ngFor="let data of displayArray">
+            <td>{{data.orderID}}</td>
+            <td>{{data.status}}</td>
+            <td>{{data.userID}}</td>
+            <td>{{data.time}}</td>
+        </tr>
+    </table>
+
+    <input type="radio" name="timing" value="daily" (change) ="timing($event)"> 
+    Daily
+    <br>
+    <input type="radio" name="timing" value="weekly" (change) ="timing($event)"> 
+    Weekly
+    <br>
+    <input type="radio" name="timing" value="monthly" (change) ="timing($event)"> 
+    Monthly
+    <br>
+    <a routerLink="/adminHomePage">Back</a><br>
+</div>
