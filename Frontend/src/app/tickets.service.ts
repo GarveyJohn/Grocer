@@ -19,4 +19,9 @@ export class TicketsService {
   {
     return this.http.post("http://localhost:9090/api/ticket/deleteTicket", ticketInfo,{responseType:"text"});
   }
+
+  addTicket(ticketInfo:Ticket):Observable<any>
+  {
+    return this.http.post("http://localhost:9090/api/ticket/storeTicket", ticketInfo,{responseType:"text"});
+  }
 }

@@ -22,6 +22,7 @@ import { UserFundsComponent } from './user-funds/user-funds.component';
 import { UserHomePageComponent } from './user-home-page/user-home-page.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserOrderStatusComponent } from './user-order-status/user-order-status.component';
+import { UserRaiseTicketComponent } from './user-raise-ticket/user-raise-ticket.component';
 import { UserSelectItemsComponent } from './user-select-items/user-select-items.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component'
 import { UserUpdateItemsComponent } from './user-update-items/user-update-items.component';
@@ -56,7 +57,8 @@ const routes: Routes = [
   {path:"userSelectItems",component:UserSelectItemsComponent},
   {path:"userSignUp",component:UserSignUpComponent},
   {path:"userUpdateItems",component:UserUpdateItemsComponent},
-  {path:"userViewCart",component:UserViewCartComponent}
+  {path:"userViewCart",component:UserViewCartComponent},
+  {path:"userRaiseTicket",component:UserRaiseTicketComponent}
 
 ];
 

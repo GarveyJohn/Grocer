@@ -1,0 +1,13 @@
+<div>
+    <h2>Raise Ticket</h2>
+    <form [formGroup] = "ticketRef" (ngSubmit)="raiseTicket()">
+        <label>User ID: </label><input type="text" formControlName = "userID"><br>
+        <label>Issue: </label><input type="text" formControlName = "issue"><br>
+        <input type="submit" value="Raise Ticket">
+        <input type="reset" value="Reset">
+        <br>
+        {{msg}}
+    </form>
+    <a routerLink="/userHomePage">Back</a><br>
+
+</div>

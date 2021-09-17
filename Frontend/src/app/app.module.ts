@@ -32,6 +32,7 @@ import { UserOrderStatusComponent } from './user-order-status/user-order-status.
 import { UserEditProfileComponent } from './user-edit-profile/user-edit-profile.component';
 import { UserFundsComponent } from './user-funds/user-funds.component';
 import { MainLoginComponent } from './main-login/main-login.component';
+import { UserRaiseTicketComponent } from './user-raise-ticket/user-raise-ticket.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { MainLoginComponent } from './main-login/main-login.component';
     UserOrderStatusComponent,
     UserEditProfileComponent,
     UserFundsComponent,
-    MainLoginComponent
+    MainLoginComponent,
+    UserRaiseTicketComponent
   ],
   imports: [
     BrowserModule,
